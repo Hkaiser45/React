@@ -8,7 +8,8 @@ function PokemonCard ({pokemon}) {
     return <figure>{pokemon.imgSrc?
         <img src={pokemon.imgSrc}></img> : <p>???</p>}
         <figcaption>{pokemon.name}</figcaption>
-        </figure> 
+        </figure>
+         
 };
 
 PokemonCard.propTypes={
@@ -17,7 +18,7 @@ PokemonCard.propTypes={
         name: PropTypes.string.isRequired,
     }).isRequired,
 
-}
+};
  export default PokemonCard;
 
  
